@@ -1,0 +1,195 @@
+# Created at 2023-12-22T14:56:56.995
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+
+# Created at 2023-12-22T14:56:59.607
+Unexpected IOException with stream:   [32mAnd [0m[32mClick on Login[0m                                                                      [90m# stepDefinitions.Stepdef.click_on_Login()[0m
+
+
+# Created at 2023-12-22T14:56:59.789
+Unexpected IOException with stream:  INFO [TestNG-PoolService-0] (Stepdef.java:149)- ********* Verifying Dashboad page title after login successful **************
+
+
+# Created at 2023-12-22T14:57:00.367
+Unexpected IOException with stream:   [32mAnd [0m[32mClick on Login[0m                                                     [90m# stepDefinitions.Stepdef.click_on_Login()[0m
+
+
+# Created at 2023-12-22T14:57:00.445
+Unexpected IOException with stream:  INFO [TestNG-PoolService-2] (Stepdef.java:149)- ********* Verifying Dashboad page title after login successful **************
+
+
+# Created at 2023-12-22T14:57:01.207
+Unexpected IOException with stream:   [32mThen [0m[32mUser can view Dashboad[0m                                                             [90m# stepDefinitions.Stepdef.user_can_view_Dashboad()[0m
+
+
+# Created at 2023-12-22T14:57:01.879
+Unexpected IOException with stream:   [32mThen [0m[32mUser can view Dashboad[0m                                            [90m# stepDefinitions.Stepdef.user_can_view_Dashboad()[0m
+
+
+# Created at 2023-12-22T14:57:03.326
+Unexpected IOException with stream:   [31mWhen [0m[31mUser opens URL [0m[31m[1m"http://admin-demo.nopcommerce.com/login"[0m          [90m# stepDefinitions.Stepdef.user_opens_URL(java.lang.String)[0m
+
+
+# Created at 2023-12-22T14:57:03.333
+Unexpected IOException with stream:       [31morg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6c0d8b832ef1efd6118e248416ee1a9, get [url]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.111, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52724}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52724/devtoo..., se:cdpVersion: 120.0.6099.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6c0d8b832ef1efd6118e248416ee1a9
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:550)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at stepDefinitions.Stepdef.user_opens_URL(Stepdef.java:93)
+	at âœ½.User opens URL "http://admin-demo.nopcommerce.com/login"(file:///C:/Users/Admin/Downloads/com.genpact.automation.cucumber%20(2)/com.genpact.automation.cucumber/./Genpact_Features/Customers1.feature:24)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:442)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at stepDefinitions.Stepdef.user_opens_URL(Stepdef.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:115)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:131)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:112)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:327)
+	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:673)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:297)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:263)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run(SequentialScheduler.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:147)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:198)
+	... 3 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1153)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:821)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:198)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:271)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:224)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:763)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:941)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:245)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:957)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:912)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:912)
+[0m
+
+
+# Created at 2023-12-22T14:57:03.343
+Unexpected IOException with stream:   [36mAnd [0m[36mUser enters Email as [0m[36m[1m"admin@yourstore.com"[0m[36m and Password as [0m[36m[1m"admin"[0m [90m# stepDefinitions.Stepdef.user_enters_Email_as_and_Password_as(java.lang.String,java.lang.String)[0m
+
+
+# Created at 2023-12-22T14:57:03.350
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on Login[0m                                                     [90m# stepDefinitions.Stepdef.click_on_Login()[0m
+
+
+# Created at 2023-12-22T14:57:03.351
+Unexpected IOException with stream:   [36mThen [0m[36mUser can view Dashboad[0m                                            [90m# stepDefinitions.Stepdef.user_can_view_Dashboad()[0m
+
+
+# Created at 2023-12-22T14:57:03.352
+Unexpected IOException with stream:   [36mWhen [0m[36mUser click on customers Menu[0m                                      [90m# stepDefinitions.Stepdef.user_click_on_customers_Menu()[0m
+
+
+# Created at 2023-12-22T14:57:03.355
+Unexpected IOException with stream:   [36mAnd [0m[36mclick on customers Menu Item[0m                                       [90m# stepDefinitions.Stepdef.click_on_customers_Menu_Item()[0m
+
+
+# Created at 2023-12-22T14:57:03.357
+Unexpected IOException with stream:   [36mAnd [0m[36mEnter customer EMail[0m                                               [90m# stepDefinitions.Stepdef.enter_customer_EMail()[0m
+
+
+# Created at 2023-12-22T14:57:03.361
+Unexpected IOException with stream:   [36mWhen [0m[36mClick on search button[0m                                            [90m# stepDefinitions.Stepdef.click_on_search_button()[0m
+
+
+# Created at 2023-12-22T14:57:03.370
+Unexpected IOException with stream:   [36mThen [0m[36mUser should found Email in the Search table[0m                       [90m# stepDefinitions.Stepdef.user_should_found_Email_in_the_Search_table()[0m
+
+
+# Created at 2023-12-22T14:57:03.372
+Unexpected IOException with stream:   [36mAnd [0m[36mclose browser[0m                                                      [90m# stepDefinitions.Stepdef.close_browser()[0m
+
+
+# Created at 2023-12-22T14:57:03.394
+Unexpected IOException: 8,1,testRunner.TestRunner,runScenario(testRunner.TestRunner),null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '4.16.1'\002C revision: '9b4c83354e'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.21'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [b6c0d8b832ef1efd6118e248416ee1a9\002C get [url]]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.111\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CWindows\005CSystemTemp\005Cscope...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:52724}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:52724/devtoo...\002C se:cdpVersion: 120.0.6099.111\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: b6c0d8b832ef1efd6118e248416ee1a9,null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '4.16.1'\002C revision: '9b4c83354e'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.21'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [b6c0d8b832ef1efd6118e248416ee1a9\002C get [url]]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.111\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CWindows\005CSystemTemp\005Cscope...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:52724}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:52724/devtoo...\002C se:cdpVersion: 120.0.6099.111\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: b6c0d8b832ef1efd6118e248416ee1a9,TestRunner.runScenario \00BB UnreachableBrowser Error communicating with the remot...,org.openqa.selenium.remote.UnreachableBrowserException: \000AError communicating with the remote browser. It may have died.\000ABuild info: version: '4.16.1'\002C revision: '9b4c83354e'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.21'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [b6c0d8b832ef1efd6118e248416ee1a9\002C get [url]]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 120.0.6099.111\002C chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...\002C userDataDir: C:\005CWindows\005CSystemTemp\005Cscope...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:52724}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:52724/devtoo...\002C se:cdpVersion: 120.0.6099.111\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: b6c0d8b832ef1efd6118e248416ee1a9\000ACaused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes\000ACaused by: java.io.IOException: HTTP/1.1 header parser received no bytes\000ACaused by: java.io.IOException: An existing connection was forcibly closed by the remote host\000A
+
+
+# Created at 2023-12-22T14:57:03.509
+Unexpected IOException with stream: Dec 22, 2023 2:57:03 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1153)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:821)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:198)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:271)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:224)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:763)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:941)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:245)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:957)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:912)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:912)
+
+
+
+# Created at 2023-12-22T14:57:04.224
+Unexpected IOException with stream:  INFO [TestNG-PoolService-0] (Stepdef.java:159)- ********* Clicking on customer main menu **************
+
+
